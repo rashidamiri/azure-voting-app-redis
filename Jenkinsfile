@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Docker Build'){
             steps{
-                sh(script: 'docker compose build')
+                sh 'whoami'
+                sh(script: 'docker --version')
             }
         }
     }
